@@ -4,6 +4,7 @@ Notes related to `node-webkit` live here!
 
 The following issue discusses the ability to use screen sharing with node-webkit: https://github.com/rogerwang/node-webkit/issues/576
 
+It seems screen sharing working in node-webkit v10.2+ and was fixed with this commit: https://github.com/rogerwang/node-webkit/commit/646275d3acf6f2a5bb475993da6fc385679c1424
 
 ## Auto Updater
 
