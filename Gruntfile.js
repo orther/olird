@@ -3,7 +3,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
         nodewebkit: {
             options: {
-                version: '0.10.0',
+                version: '0.10.5',
                 buildDir: './build', // Where the build version of my node-webkit app is saved
                 credits: './src/Credits.html',
                 macIcns: './icon.icns', // Path to the Mac icon file
