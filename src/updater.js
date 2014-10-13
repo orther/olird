@@ -6,6 +6,12 @@ var copyPath, execPath;
 
 $('#version').text(pkg.version);
 
+
+
+var updateStatus = $("#update_status");
+
+updateStatus.append("<p>Updater Started</p>");
+
 // Args passed when new app is launched from temp dir during update
 if(gui.App.argv.length) {
     // ------------- Step 5 -------------
@@ -25,19 +31,27 @@ if(gui.App.argv.length) {
 else { // if no arguments were passed to the app
 
     // ------------- Step 1 -------------
+    updateStatus.append("<p>step 1</p>");
     upd.checkNewVersion(function(error, newVersionExists, manifest) {
+        updateStatus.append("<p>step 1.5</p>");
         if (!error && newVersionExists) {
 
             // ------------- Step 2 -------------
+            updateStatus.append("<p>step 2</p>");
             upd.download(function(error, filename) {
+                updateStatus.append("<p>step 2.5</p>");
                 if (!error) {
 
                     // ------------- Step 3 -------------
+                    updateStatus.append("<p>step 3</p>");
                     upd.unpack(filename, function(error, newAppPath) {
+                        updateStatus.append("<p>step 3.5</p>");
                         if (!error) {
 
                             // ------------- Step 4 -------------
+                            updateStatus.append("<p>step 4</p>");
                             upd.runInstaller(newAppPath, [upd.getAppPath(), upd.getAppExec()],{});
+                            updateStatus.append("<p>step 4.5</p>");
                             gui.App.quit();
                         }
                     }, manifest);
