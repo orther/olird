@@ -2,7 +2,7 @@
     "main": "index.html",
     "name": "olird",
     "description": "Oliver R&D demo app of node-webkit",
-    "version": "0.4.3",
+    "version": "0.4.4",
     "chromium-args" : "--enable-usermedia-screen-capturing",
     "keywords": [ "demo", "node-webkit" ],
     "window": {
@@ -26,13 +26,13 @@
         "node-webkit-updater": "^0.2.3"
     },
 
-    "manifestUrl": "https://raw.githubusercontent.com/orther/olird/master/package.json",
+    "manifestUrl": "https://raw.githubusercontent.com/orther/olird/master/src/package.json",
     "packages": {
         "mac": {
-            "url": "https://github.com/orther/olird/blob/master/releases/olird.osx.0.4.3.zip?raw=true"
+            "url": "https://github.com/orther/olird/blob/master/releases/olird.osx.zip?raw=true"
         },
         "win": {
-            "url": "https://github.com/orther/olird/blob/master/releases/olird.win.0.4.3.zip?raw=true"
+            "url": "https://github.com/orther/olird/blob/master/releases/olird.win.zip?raw=true"
         }
     }
 }

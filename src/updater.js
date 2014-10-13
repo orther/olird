@@ -34,6 +34,8 @@ else { // if no arguments were passed to the app
     updateStatus.append("<p>step 1</p>");
     upd.checkNewVersion(function(error, newVersionExists, manifest) {
         updateStatus.append("<p>step 1.5</p>");
+        updateStatus.append("<p>"+newVersionExists+"</p>");
+        updateStatus.append("<p>"+error+"</p>");
         if (!error && newVersionExists) {
 
             // ------------- Step 2 -------------
