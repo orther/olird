@@ -42,12 +42,14 @@ else { // if no arguments were passed to the app
             updateStatus.append("<p>step 2</p>");
             upd.download(function(error, filename) {
                 updateStatus.append("<p>step 2.5</p>");
+                updateStatus.append("<p>"+filename+"</p>");
                 if (!error) {
 
                     // ------------- Step 3 -------------
                     updateStatus.append("<p>step 3</p>");
                     upd.unpack(filename, function(error, newAppPath) {
                         updateStatus.append("<p>step 3.5</p>");
+                        updateStatus.append("<p>"+newAppPath+"</p>");
                         if (!error) {
 
                             // ------------- Step 4 -------------
