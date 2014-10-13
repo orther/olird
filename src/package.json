@@ -2,7 +2,7 @@
     "main": "index.html",
     "name": "olird",
     "description": "Oliver R&D demo app of node-webkit",
-    "version": "0.4.6",
+    "version": "0.5.0",
     "chromium-args" : "--enable-usermedia-screen-capturing",
     "keywords": [ "demo", "node-webkit" ],
     "window": {
@@ -10,13 +10,13 @@
         "icon": "link.png",
         "toolbar": true,
         "frame": true,
-        "width": 800,
-        "height": 500,
+        "width": 1200,
+        "height": 900,
         "position": "center",
         "min_width": 400,
         "min_height": 200,
-        "max_width": 800,
-        "max_height": 600
+        "max_width": 1800,
+        "max_height": 1600
     },
     "webkit": {
         "plugin": true
