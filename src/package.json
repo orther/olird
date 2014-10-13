@@ -29,10 +29,10 @@
     "manifestUrl": "https://raw.githubusercontent.com/orther/olird/master/src/package.json",
     "packages": {
         "mac": {
-            "url": "https://github.com/orther/olird/blob/master/releases/olird.osx.zip?raw=true"
+            "url": "https://s3.amazonaws.com/olird/0.5.0/olird.osx.zip"
         },
         "win": {
-            "url": "https://github.com/orther/olird/blob/master/releases/olird.win.zip?raw=true"
+            "url": "https://s3.amazonaws.com/olird/0.5.0/olird.win.zip"
         }
     }
 }
