@@ -5,7 +5,18 @@
 <body>
 
     <h1>olird - v<span id="version">VERSION GOES HERE!!</span></h1>
+
+    <p align="center"><input type="button" id="refresh_app" value="Refresh App"/></p>
+    <script language="JavaScript">
+        $('#refresh_app').click(function() {
+            if (location) {
+                location.reload();
+            }
+        });
+    </script>
+
     <div id="update_status">
+        <p align="center"><input type="button" id="update_app" value="Update App"/></p>
         <h2>Update status</h2>
     </div>
     <script language="javascript" src="updater.js"></script>

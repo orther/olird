@@ -2,7 +2,7 @@
     "main": "index.html",
     "name": "olird",
     "description": "Oliver R&D demo app of node-webkit",
-    "version": "0.5.0",
+    "version": "0.5.1",
     "chromium-args" : "--enable-usermedia-screen-capturing",
     "keywords": [ "demo", "node-webkit" ],
     "window": {
@@ -29,10 +29,10 @@
     "manifestUrl": "https://raw.githubusercontent.com/orther/olird/master/src/package.json",
     "packages": {
         "mac": {
-            "url": "https://s3.amazonaws.com/olird/0.5.0/olird.osx.zip"
+            "url": "https://s3.amazonaws.com/olird/0.5.1/olird.osx.zip"
         },
         "win": {
-            "url": "https://s3.amazonaws.com/olird/0.5.0/olird.win.zip"
+            "url": "https://s3.amazonaws.com/olird/0.5.1/olird.win.zip"
         }
     }
 }
